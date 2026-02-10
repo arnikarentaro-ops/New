@@ -39,6 +39,7 @@ body{
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
+    cursor: pointer;
 }
 .under> span{
     color: gray;
@@ -78,6 +79,7 @@ body{
     text-align: center;  
     position: relative;
     font-family: "MyFont", sans-serif;
+    cursor: pointer;
 }
 .main{
     margin-top: -35px;
@@ -164,13 +166,15 @@ body{
 #go p{
     color: #FF510C;
 }  
-#go span{
+#go button{
     background-color: #FF510C;
+    border-color: #FF510C;
     color: white;
     border-radius: 10px;
     width: 80px;
     height: 30px;
-    padding-top: 13px;
+    font-family: "MyFont", sans-serif;
+    cursor: pointer;
 }
 
 #go{
@@ -200,11 +204,16 @@ body{
    gap: 15px;
     height: 300px;
     font-family: "MyFont", sans-serif;
+    cursor: pointer;
     
-}    
+} 
+   
 .th span{
     margin-top: 3%;
    color: rgb(0, 0, 0);
+}
+.th:hover{
+    box-shadow: 4px 4px 7px 5px gray;
 }
 .th{
    /* background-color: rgb(255, 255, 255);
@@ -272,12 +281,14 @@ body{
 }
 #click{
     background-color: white;
+    border-color: white;
     border-radius: 5px;
     width: 100px;
     height: 27px;
     align-items: center;
     color:rgb(13, 72, 145) ;
     font-family: "MyFont", sans-serif;
+    cursor: pointer;
 }
 .iphone{
     display: flex;
@@ -304,9 +315,10 @@ body{
 }
 #click2{
     background-color: white;
+    border-color: white;
     border-radius: 5px;
     text-align: center;
-    padding-top: 5px;
+    cursor: pointer;
     width: 100px;
     height: 27px;
     color: rgb(149, 8, 149);
@@ -340,6 +352,9 @@ body{
     background-color: #FF510C;
     border-radius: 10px;
 }
+#lastorange img:hover{
+    box-shadow: 4px 4px 7px 5px rgba(239, 117, 61, 0.788);
+}
 .continue{
     background-color: #edd4cad3;
     width: 350px;
@@ -352,6 +367,9 @@ body{
     color: #FF510C;
     height: 125px;
 }
+.continue:hover{
+    box-shadow: 4px 4px 7px 5px rgba(239, 117, 61, 0.788);
+}
 .picture{
     display: flex;
     justify-content: center;
@@ -361,7 +379,7 @@ body{
     width: 1400px;
     height: 650px;
     border-radius: 15px;
-    
+    cursor: pointer;
     
 }
 .depi{
@@ -373,13 +391,15 @@ body{
 }
 #click3{
     background-color: white;
+    border-color: white;
     border-radius: 10px;
     text-align: center;
-    padding-top: 5px;
+    font-family: "MyFont", sans-serif;
     width: 100px;
     height: 25px;
     color: rgb(151, 17, 2);
     margin-left: 60%;
+    cursor: pointer;
 }
 .details{
     margin-top: 10%;
@@ -391,15 +411,18 @@ body{
     align-items: center;
     margin-bottom: 2%;
     font-family: "MyFont", sans-serif;
+   
 
 }
 .end{
     font-family: "MyFont", sans-serif;
+    
 }
 .de{
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 }
 .column{
     display: flex;
@@ -408,15 +431,17 @@ body{
     justify-content: space-around;
     text-align: right;
     flex-direction: row-reverse;
-    
+    cursor: pointer;
 }
 .lastline{
     display: flex;
     align-items: center;
     background-color: rgba(212, 211, 211, 0.678);
-    
     justify-content: space-around;
     flex-direction: row-reverse;
+}
+.p1{
+    
 }
 .back{
     display: flex;
@@ -430,6 +455,7 @@ body{
     width: 30px;
     height: 25px;
     border-radius: 2px;
+    cursor: pointer;
 } 
 .x3> p{
     display: flex;
@@ -448,7 +474,9 @@ body{
 }
 #x1{
     background-color:rgba(239, 88, 71, 0.874);
+    
     width: 100px;
+    cursor: pointer;
     border-radius: 12px;
 }
 .note{
