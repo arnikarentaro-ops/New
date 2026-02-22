@@ -1,0 +1,49 @@
+body{
+    min-height: 200vh;
+}
+.fox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape{
+    width: 150px;
+    height: 150px;
+    margin-top: 19.5%;
+    background-color: rgba(128, 0, 128, 0.651);
+    transform: skew(42deg, 318deg);
+    rotate: 88deg;
+    position: relative;
+}
+.shape2{
+    width: 150px;
+    height: 150px;
+    
+    
+    margin-top: 1%;
+    background-color: purple;
+    transform: skew(5deg, 2deg);
+    rotate: 45deg;
+}
+.shape3{
+    width: 150px;
+    height: 150px;
+    margin-top: 1%;
+    background-color: purple;
+    transform: skew(0deg, 4deg);
+    rotate: 45deg;
+}
+.shape4{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-right: 0.2%;
+    margin-top: 35%;
+    background-color: purple;
+    transform: skew(359deg, 359deg);
+    rotate: 45deg;
+}
+
+
+
