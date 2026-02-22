@@ -30,15 +30,90 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 9px;
 }
-.icons{
+.search bottom{
+    color: white;
+    background-color: #FF510C;
+    width: 120px;
+    text-align: center;
+    height: 34px;
     display: flex;
-    width: 830px;
-    transform: translate(350px, 2px);
-    background-color: rgb(225, 223, 223);
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.arm{
+    display: flex;
+    align-items: center;
+    color: #FF510C;
+    gap: 20px;
+    font-weight: 400;
+    font-family: "Font",sans-serif;
+    
+}
+.bar{
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 15px;
+    color: #303030;
+    gap: 150px;
+    background-color:#FBFBFB;
+    border-radius: 60px;
+    width: 320px;
+    height: 39px;
+
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.sicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.zero{
+    display: flex;
+    align-items: center;
+}
+#z1{
+    position: absolute;
+    padding-left: 20px;
+    padding-bottom: 16px;
+}
+.line-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1000px;
+    height: 110px;
+    position: absolute;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 92px;
+    justify-content: center;
+}
+
+
+.icons{
+    margin-top: 32px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 15%;
     cursor: pointer;
 }
 .under> span{
@@ -50,6 +125,7 @@ body{
  display: flex;
  flex-direction: column;
  align-items: center;
+ text-align: center;
 }
 .vision{
     display: flex;
@@ -68,18 +144,23 @@ body{
     margin-bottom: 19px;
     font-family: "Font",sans-serif;
 }
-#shop{
-    background-color: #FF510C;
-     width: 142px;
-     height: 30px;
-    padding-top: 10px;
-    justify-self: center;
-    color: white;
-   border-radius: 20px;
+#shop {
+    
+    justify-self: center;  
+    border-radius: 20px;
     text-align: center;  
     position: relative;
+}
+#shop button{
+    background-color: #FF510C;
+    color: white;
+    width: 142px;
+    height: 30px;
+    border: none;
+    border-radius: 9px;
     font-family: "MyFont", sans-serif;
     cursor: pointer;
+    box-shadow: 0px 0px 20px 0px #ff510c8d;
 }
 .main{
     margin-top: -35px;
@@ -99,22 +180,38 @@ body{
 #sheg{
     font-size: 30px;
     color: #FF510C;
-    text-decoration: line-through;
+    position: relative;
     font-family: "Font", sans-serif;
-   
+    margin-left: 5%;
+    display: flex;
+    position: absolute;
+    
 }
 .offer{
     display: flex;
-    justify-content: center;
-    gap: 40px; 
+    justify-content: end;
+    gap: 35px; 
     direction: rtl;
     margin-top: 200px;
     align-items: center;
+    
+}
+.integrate{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+.space{
+    display: flex;
+    padding-left: 10%;
 }
 .time{
     width: 70px;
     height: 70px;
    display: flex;
+   justify-content: center;
    flex-direction: column;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -122,7 +219,7 @@ body{
     
 }
 .time> span{
-    background-color: #fac9b5;
+    background-color:  #FFF1EB;
     height: 40px;
    padding-top:12px ;
     border-radius: 10px;
@@ -130,8 +227,12 @@ body{
     color: #FF510C;
 }
 #orange span{
-    color: white;
+    color: #FFFFFF;
     background-color: #FF510C;
+    
+}
+#orange{
+    color: #FF510C;
 }
 .blur{
     display: flex;
@@ -148,14 +249,15 @@ body{
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
-    box-shadow: 4px 4px 3px 5px rgba(135, 131, 131, 0.829) ;  
+    
+    box-shadow: 4px 4px 3px 5px  #FAFAFA;  
     transform: translate(-250px, -30px);
 }
 .deblur{
     float: left;
     position: absolute;
     transform: translate(-300px,4px);
-    background-color: rgba(191, 191, 191, 0.951);
+    background-color: #FAFAFA;
     width: 700px;
     height: 200px;
     border-radius: 20px;
@@ -168,11 +270,12 @@ body{
 }  
 #go button{
     background-color: #FF510C;
-    border-color: #FF510C;
+    border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
     width: 80px;
     height: 30px;
+    margin-right: 12%;
     font-family: "MyFont", sans-serif;
     cursor: pointer;
 }
@@ -202,7 +305,7 @@ body{
     align-items: center;
     margin-bottom: 25%;
    gap: 15px;
-    height: 300px;
+    height: 400px;
     font-family: "MyFont", sans-serif;
     cursor: pointer;
     
@@ -216,12 +319,10 @@ body{
     box-shadow: 4px 4px 7px 5px gray;
 }
 .th{
-   /* background-color: rgb(255, 255, 255);
-    border: 10px solid rgb(185, 185, 185);*/
     border-radius: 20px;
-    background-color: rgb(174, 172, 172);
+    background-color: #FAFAFA;
     width: 300px;
-    height: 400px;
+    height: 430px;
     margin-top: 20%;
     padding-top: 2%;
     display: flex;
@@ -254,7 +355,7 @@ body{
     background-color:rgb(13, 72, 145) ;
     width: 700px;
     height: 500px;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content: center;
 }
 
@@ -281,7 +382,7 @@ body{
 }
 #click{
     background-color: white;
-    border-color: white;
+    border:none;
     border-radius: 5px;
     width: 100px;
     height: 27px;
@@ -315,7 +416,7 @@ body{
 }
 #click2{
     background-color: white;
-    border-color: white;
+    border:none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
@@ -350,7 +451,7 @@ body{
     width: 350px;
     height: 300px;
     background-color: #FF510C;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 #lastorange img:hover{
     box-shadow: 4px 4px 7px 5px rgba(239, 117, 61, 0.788);
@@ -362,10 +463,10 @@ body{
     align-items: center;
     justify-content: center;
     gap: 12px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     color: #FF510C;
-    height: 125px;
+    height: 150px;
 }
 .continue:hover{
     box-shadow: 4px 4px 7px 5px rgba(239, 117, 61, 0.788);
@@ -391,7 +492,7 @@ body{
 }
 #click3{
     background-color: white;
-    border-color: white;
+    border:none;
     border-radius: 10px;
     text-align: center;
     font-family: "MyFont", sans-serif;
@@ -403,7 +504,7 @@ body{
 }
 .details{
     margin-top: 10%;
-    background-color: rgba(212, 211, 211, 0.678);
+    background-color: #FAFAFA;
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
@@ -426,8 +527,9 @@ body{
 }
 .column{
     display: flex;
-    background-color: rgba(212, 211, 211, 0.678);
-    align-items: center;
+    background-color: #FAFAFA;
+;
+    
     justify-content: space-around;
     text-align: right;
     flex-direction: row-reverse;
@@ -436,13 +538,12 @@ body{
 .lastline{
     display: flex;
     align-items: center;
-    background-color: rgba(212, 211, 211, 0.678);
+    background-color: #FAFAFA;
+;
     justify-content: space-around;
     flex-direction: row-reverse;
 }
-.p1{
-    
-}
+
 .back{
     display: flex;
     align-items: center;
